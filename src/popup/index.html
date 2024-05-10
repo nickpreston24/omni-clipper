@@ -3,14 +3,8 @@
     <link rel="stylesheet" type="text/css" href="./popup.css">
 </head>
 <body>
-<div class="p-6 min-w-2xl h-64">
-    <h1 class="text-gray-500 text-2xl">Hello Web Extension</h1>
-    <p class="py-2 text-lg tracking-wide">
-        Update me in <span
-            class="inline-block bg-gray-100 rounded-sm text-sm p-1 leading-none whitespace-no-wrap text-purple-600 font-mono align-baseline">
-        `src/popup/index.html`
-    </span>
-    </p>
+<div class="p-6 min-w-2xl h-full">
+    <h1 class="text-gray-500 text-2xl">Welcome to Omni Clipper!</h1>
     <hr/>
     <div class="py-2" x-data="{ open: false }">
         <button
@@ -29,6 +23,11 @@
                 <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExazdtMnQ0czVsc2F5cXAyMXAxbGQzNTl1cXRwOG9vbnZ4ZWwyN2szOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xTiIzJSKB4l7xTouE8/giphy.gif"
                      alt="">
                 Hello there!
+
+                <button
+                        :click="get_job_applications()"
+                >Get Jobs
+                </button>
             </div>
         </div>
     </div>

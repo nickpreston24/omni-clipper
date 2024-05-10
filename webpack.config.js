@@ -1,6 +1,7 @@
 const ExtensionReloader  = require('webpack-extension-reloader');
 const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
+const Dotenv = require('dotenv-webpack');
 
 const contentScripts = {
   content: './content/index.js'
@@ -26,6 +27,7 @@ let ExtensionConfig = Object.assign({}, config, {
       filename: '[name].dist.js',
     },
     plugins: [
+      new Dotenv(),
       new ExtensionReloader({
         port: 9090,
         reloadPage: true,
