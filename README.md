@@ -1,6 +1,11 @@
 # Omni Clipper
 The ultimate customizeable web clipper!
 
+## NOTES :clipboard:
+
+THIS PROJECT REQUIRES NODE 16.10.0 TO RUN
+(don't know why, I didn't write the modules)
+
 ## Goals
 
 * Clip CSS Selectors, media images, page titles, and selected text.
